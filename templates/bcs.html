@@ -1,0 +1,71 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://kit.fontawesome.com/f0e95d9bf1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <link rel="stylesheet" href="/static/css/bcs_style.css"/>
+        <link rel="stylesheet" href="/static/css/style.css"/>
+        <title>BCS 비만도</title>
+    </head>
+    <style>
+        a {
+            color: black; /* 링크의 글자 색상을 검정으로 지정 */
+        }
+    </style>
+    <body>
+    <div class="bcs_describe">
+        <h1><strong>우리 아이 비만도 측정하기</strong></h1><br>
+        <h4><strong>BCS비만도란?</strong></h4>
+        <h5><strong>(Body Condition Score)</strong></h5>
+        <p>지방축적 정도, 갈비뼈, 허리모양 등을 바탕으로 <br>
+        비만도를 측정하는 지표입니다.<br>
+        총 1~9단계로 나뉘어져 있습니다.<br>
+        1단계로 갈 수록 '마름'이고 9단계로 갈수록 '비만'입니다.</p><br>
+        <h4><strong>비만이 왜 위험한가요?</strong></h4>
+        <p>
+            영국 리버풀 수의과대학에 따르면<br>
+            '비만'인 강아지는 '평균 체중'인 강아지와 비교했을 때<br>
+            평균 수명이 약 2년 가량 더 짧다는 연구결과가 나왔습니다.<br>
+            강아지 비만은 관절질환, 간질환, 심장병, 디스크 등 <br>
+            여러 질병의 원인이 될 수 있습니다.<br>
+        </p>
+        <p>
+            체중 관리를 통해 우리 아이 건강과 행복을 지켜볼까요?
+        </p>
+        <a class="button" href="#two"><strong>검사하기</strong></a>
+    </div>
+    <section id="two">
+        <div class="fNKwjb">
+            <form class="hRbrmk">
+                <div class="kYCTRC">
+                    <div class="gJPmZJ">
+                        <label class="YylJn"><strong>STEP 1</strong> 반려동물 종류 선택하기</label>
+                    </div>
+                </div>
+                <div class="fptxwn">
+                    <div class="bQTTNz">
+                        <a href="dog_bcs" class="button">
+                            <img src="/static/images/dog_icon.png" alt="강아지" class="icon_button">
+                        </a>
+                        <p class="iOsWVx">강아지</p>
+                    </div>
+
+                    <div class="bQTTNz">
+                        <a href="cat_bcs" class="button">
+                            <img src="/static/images/cat_icon.png" alt="고양이" class="icon_button">
+                        </a>
+                        <p class="iOsWVx">고양이</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    </body>
+
+    <script defer src="/static/js/main.js"></script>
+{% endblock %}

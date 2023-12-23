@@ -1,0 +1,162 @@
+{% extends 'index.html' %}
+{% block content %}
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>About</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <noscript>
+        <link rel="stylesheet" href="/static/css/noscript.css"/>
+    </noscript>
+    <script src="https://kit.fontawesome.com/f0e95d9bf1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <div id="process"></div>
+
+    <!-- 네비게이션바 -->
+    <nav class="navbar sticky-top bd-navbar navbar-expand-lg navbar-light" id="aboutNav">
+        <div class="container-fluid ">
+            <div class="navbar collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#header"><strong>프로젝트 소개</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#one"><strong>개발배경</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#two"><strong>기대효과</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#three"><strong>주요기능</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 프로젝트 소개 -->
+    <section id="header">
+        <div class="inner">
+            <img src="/static/images/paw-solid.svg" class="about-header-icon" >
+
+            <h1><strong>냥멍닥터 김집사</strong><br>
+                반려동물이 말하지 못하는 고통을 알아주세요.</h1>
+            <p>반려동물의 피부와 눈의 건강을 확인해보세요<br>
+                BCS비만도를 통해 건강 상태를 확인하고, 가까운 병원도 찾을 수 있습니다.</p>
+            <p></p>
+
+        </div>
+    </section>
+
+    <!-- 개발배경 -->
+    <section id="one" class="main style1">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2><strong>개발 배경</strong></h2>
+                    </header>
+                    <p>• 반려동물 양육인구가 602만 가구 시대에서 반려동물의 질병을 조기에 발견하여 적절히 치료, 예방하는 기술은 매우 중요합니다.<br>
+                        • 동물병원을 방문하기 전이나 동물병원에 방문하는 것이 어려운 상황에서 피부, 안구 질환을 진단하고 싶을 때 인터넷 검색을 통한 판단하는 것보다 정확하게 판단할 방법이 필요합니다.</p>
+
+                </div>
+                <div class="col-6 col-12-medium">
+                    <img src="/static/images/people_love.jpg"
+                        class="dog-skin">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 기대효과 -->
+    <section id="two" class="main style2">
+        <div class="container">
+            <div class="row gtr-150">
+                <div class="col-6 col-12-medium">
+                    <img src="/static/images/dog_cat_smile.jpg"
+                        class="dog-skin">
+                </div>
+                <div class="col-6 col-12-medium">
+                    <header class="major">
+                        <h2><strong>기대 효과</strong></h2>
+                    </header>
+                    <p>• 이미지 기반 진단을 통해 사용자들은 반려동물의 건강 상태롤 조기에 진단할 수 있고 이에 따른 적절한 조치를 할 수 있습니다.<br>
+• 이 웹서비스는 반려동물 소유자에게는 더 나은 서비스를 제공하고 반려동물 혹은 동물 건강 연구 및 의학 분야에 관련 데이터를 제공할 뿐만 아니라 반려동물 관련 교육 분야나 각종 반려동물 산업에도 좋은 영향을 줄 수 있을 것입니다. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요기능 -->
+    <section id="three" class="main style1 special">
+        <div class="container">
+            <header class="major">
+                <h2><strong>주요기능</strong></h2>
+            </header>
+            <p><strong>냥멍닥터 김집사는</strong> 이런 서비스를 제공하고 있습니다</p>
+            <div class="row gtr-150">
+
+                <div class="col-3 col-12-medium">
+                    <span class="image fit three-image"><img src="/static/images/cat_eye.png" alt=""></span>
+                    <h3>안구질환 탐지<a href="eye_detect" class="button"><i class="bi bi-box-arrow-in-right"></i></a></h3>
+                    <p>반려동물의 안구 질환을</br>
+                        탐지할 수 있습니다.</br>
+                    안검염, 결막염, 각막질환 등</p>
+                </div>
+
+                <div class="col-3 col-12-medium">
+                    <span class="image fit three-image"><img src="/static/images/dog_m.png" alt=""></span>
+                    <h3>피부질환 탐지<a href="skin_detect" class="button"><i class="bi bi-box-arrow-in-right"></i></a></h3>
+                    <p>반려동물의 피부 질환을</br>
+                        탐지할 수 있습니다.</br>
+                    구진, 비듬, 각질, 궤양 등</p>
+                </div>
+
+                <div class="col-3 col-12-medium">
+                    <span class="image fit three-image"><img src="/static/images/dog_eat.jpg" alt=""></span>
+                    <h3>비만도 정보<a href="bcs" class="button"><i class="bi bi-box-arrow-in-right"></i></a></h3>
+                    <p>BCS(Body Condition Score)</br>
+                        비만도를 통해 반려동물의</br>
+                        비만도를 확인할 수 있습니다.</p>
+                </div>
+
+                <div class="col-3 col-12-medium">
+                    <span class="image fit three-image"><img src="/static/images/dog_doc.png" alt=""></span>
+                    <h3>병원 찾기<a href="hospital" id="hospital" class="button"><i
+                            class="bi bi-box-arrow-in-right"
+                            onclick="loading()"></i></a></h3>
+                    <p>전국 동물 병원의</br>
+                        위치 및 정보를 </br>
+                        확인할 수 있습니다.</p>
+                </div>
+
+            </div>
+        </div>
+        <a class="top-button" href="#header">
+            <i class="bi bi-arrow-up-circle fa-2x"></i>
+        </a>
+        <a class="down-button" href="#footer">
+            <i class="bi bi-arrow-down-circle fa-2x"></i>
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="https://github.com/kkkimsuji/team_pet" target="_blank"><i
+                    class="fa-brands fa-github fa-2x"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Scripts -->
+
+    <script defer src="/static/js/browser.min.js"></script>
+    <script defer src="/static/js/breakpoints.min.js"></script>
+    <script defer src="/static/js/util.js"></script>
+    <script defer src="/static/js/main.js"></script>
+    <script defer src="/static/js/about.js"></script>
+
+{% endblock %}
